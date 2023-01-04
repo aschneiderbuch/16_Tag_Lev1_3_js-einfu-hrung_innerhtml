@@ -11,16 +11,17 @@ console.log(gallery);
 gallery.innerHTML += "test";
 console.log(gallery);
 
-gallery.innerHTML += "<figure><img src="./assets/img/bild.jpg" alt="Bild"></figure> + <figure><img src="./assets/img/bild.jpg" alt="Bild"></figure> + <figure><img src="./assets/img/bild.jpg" alt="Bild"></figure>"
-gallery.innerHTML += "<figure> test3</figure>"
-gallery.innerHTML += "<figure> test4</figure>"
+gallery.innerHTML += `<figure><img src="./assets/img/bild.jpeg" alt="Bild"> <figcaption>Fig.1</figcaption> </figure>`
+    + `<figure><img src="./assets/img/bild.jpeg" alt="Bild"> <figcaption>Fig.2</figcaption> </figure>`
+    + `<figure><img src="./assets/img/bild.jpeg" alt="Bild"> <figcaption>Fig.3</figcaption> </figure>`
 
-gallery.style.backgroundColor = "green"         // section gallery wird von rot auf grün 
+console.log(gallery);
+
+gallery.style.display = "flex";
+console.log(gallery)
+gallery.style.flexDirection = "row";
+console.log(gallery)
+gallery.style.justifyContent = "center";
+gallery.style.flexWrap = "wrap";
 console.log(gallery)
 
-
-let figureOne = document.querySelector("figure:nth-of-type(1)");
-console.log(figureOne);
-figureOne.style.backgroundColor = "red" 
-console.log(figureOne)
-figureOne.innerHTML += "test22"
